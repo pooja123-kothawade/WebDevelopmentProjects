@@ -1,1 +1,78 @@
 
+/* General reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;       /* ✅ Task 1 */
+  top: 0;
+  width: 100%;           /* ✅ Task 2 */
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;         /* ✅ Task 6 */
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* ✅ Task 3 */
+  width: 80px;           /* ✅ Task 4 */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content */
+main {
+  position: relative;    /* ✅ Task 5 */
+  top: 80px;             /* ✅ Task 7 */
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  padding: 60px 20px;
+  background: #f4f4f4;
+}
+
+/* Supporting sections */
+.supporting {
+  margin: 40px 0;
+}
+
+.supporting .col {
+  display: inline-block; /* ✅ Task 8 */
+  width: 200px;          /* ✅ Task 9 */
+  height: 200px;
+  margin: 10px;
+  line-height: 200px;
+  background: #ddd;
+  font-weight: bold;
+}
+
+/* Footer (Challenge) */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
