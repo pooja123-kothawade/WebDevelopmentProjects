@@ -1,78 +1,157 @@
-
-/* General reset */
-body, html {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-/* Header */
 header {
-  position: fixed;       /* ✅ Task 1 */
+  background-color: #333333;
+  position: fixed;
   top: 0;
-  width: 100%;           /* ✅ Task 2 */
-  background: #333;
-  color: white;
-  padding: 10px 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  margin: 0;
+  padding: 20px 0;
   text-align: center;
-  z-index: 1000;         /* ✅ Task 6 */
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
-  display: inline-block; /* ✅ Task 3 */
-  width: 80px;           /* ✅ Task 4 */
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display: inline-block;
+  width: 80px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Main content */
 main {
-  position: relative;    /* ✅ Task 5 */
-  top: 80px;             /* ✅ Task 7 */
   text-align: center;
-  padding: 20px;
+  position: relative;
+  top: 80px;
 }
 
-.hero {
-  padding: 60px 20px;
-  background: #f4f4f4;
+main h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
 }
 
-/* Supporting sections */
-.supporting {
-  margin: 40px 0;
-}
-
-.supporting .col {
-  display: inline-block; /* ✅ Task 8 */
-  width: 200px;          /* ✅ Task 9 */
-  height: 200px;
-  margin: 10px;
-  line-height: 200px;
-  background: #ddd;
-  font-weight: bold;
-}
-
-/* Footer (Challenge) */
 footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #333;
-  color: white;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
   text-align: center;
-  padding: 10px 0;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-default {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  margin-bottom: 20px;      
+}
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.supporting a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333; 
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+    height: auto;
+  }
 }
